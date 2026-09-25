@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Sistem Informasi Portal</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed": "#89f5e7", "tertiary": "#006058", "on-primary-fixed-variant": "#003ea8", "surface-dim": "#cbdbf5", "tertiary-fixed-dim": "#6bd8cb", "inverse-surface": "#213145", "on-primary-container": "#eeefff", "secondary-fixed-dim": "#bec6e0", "on-secondary-container": "#5c647a", "on-surface": "#0b1c30", "on-tertiary": "#ffffff", "on-primary-fixed": "#00174b", "surface-container-highest": "#d3e4fe", "secondary": "#565e74", "on-tertiary-container": "#b3fff3", "primary": "#004ac6", "primary-fixed": "#dbe1ff", "surface-container-high": "#dce9ff", "background": "#f8f9ff", "surface-bright": "#f8f9ff", "outline-variant": "#c3c6d7", "inverse-primary": "#b4c5ff", "surface-container-low": "#eff4ff", "surface-container": "#e5eeff", "error-container": "#ffdad6", "outline": "#737686", "error": "#ba1a1a", "on-tertiary-fixed": "#00201d", "on-surface-variant": "#434655", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#005049", "on-background": "#0b1c30", "on-secondary-fixed": "#131b2e", "primary-fixed-dim": "#b4c5ff", "primary-container": "#2563eb", "surface-container-lowest": "#ffffff", "secondary-fixed": "#dae2fd", "on-primary": "#ffffff", "on-secondary": "#ffffff", "on-error-container": "#93000a", "surface": "#f8f9ff", "surface-tint": "#0053db", "on-error": "#ffffff", "surface-variant": "#d3e4fe", "secondary-container": "#dae2fd", "tertiary-container": "#007b71", "on-secondary-fixed-variant": "#3f465c" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2.5rem", "margin": "1rem", "space-2xs": "0.25rem", "space-md": "1rem", "space-sm": "0.75rem", "gutter-lg": "2rem", "margin-md": "2rem", "space-2xl": "4rem", "space-xs": "0.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "gutter-sm": "1rem", "margin-lg": "4rem" }, "fontFamily": { "display-hero-mobile": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "stat-counter": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "code-snippet": ["JetBrains Mono"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "stat-counter": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "code-snippet": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs"><button aria-label="Menu Utama" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">menu</span></button><img alt="Logo Prodi Sistem Informasi" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VsS0tQECBbGWGgd62HYH-8jzuCp2F7kD_f3iJg4JknoS-Osl2VCm8CyrX8Y9aO9YAGgCbj2I3cOkIy8jMPxL0whP0XE_ceZur9Z3N1t39Fr24G1KzKIrJQkCkKlJJDqYx70L_girvFMTJvUpHgFxCozeJVKYX37rBKpMQuEIOL_RnpOYQMZJJE5MXw_4ONgkD_4dpL3gjQZNYIdFG-vtzh9M5RF79xx10z0FndJk6wwAxmDJ7oXcYfGod-"/><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-bold leading-tight tracking-tight">Sistem Informasi</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none uppercase">Fakultas Ilmu Komputer</span></div></div><div class="flex items-center gap-space-xs"><span class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>Baik Sekali</span><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full pb-6">
+<!-- Top Intro Section -->
+<div class="px-margin pt-4 pb-2">
+<div class="flex items-center justify-between">
+<div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm mb-1.5 font-bold">
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">campaign</span>
+          Warta & Jejak Langkah
+        </span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Kabar & Prestasi Kampus</h1>
+</div>
+<button aria-label="Cari Berita" class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center hover:bg-surface-container-highest transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Eksplorasi torehan inovasi teknologi, geliat riset, dan dinamika sivitas akademika Sistem Informasi.</p>
+</div>
+<!-- Horizontal Scrollable Segmented Control Pills -->
+<div class="mt-2 pl-margin overflow-x-auto no-scrollbar py-2">
+<div class="flex items-center gap-2 pr-margin" id="filter-pills">
+<button class="filter-btn shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all duration-200" data-filter="all" type="button">
+        Semua
+      </button>
+<button class="filter-btn shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all duration-200" data-filter="resmi" type="button">
+        Berita Resmi
+      </button>
+<button class="filter-btn shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all duration-200" data-filter="kegiatan" type="button">
+        Kegiatan Kampus
+      </button>
+<button class="filter-btn shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all duration-200" data-filter="prestasi" type="button">
+        Prestasi Mahasiswa
+      </button>
+<button class="filter-btn shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-high transition-all duration-200" data-filter="pengumuman" type="button">
+        Pengumuman
+      </button>
+</div>
+</div>
+<!-- Featured Highlight Card (Editorial Bento Hero) -->
+<div class="px-margin mt-3">
+<div class="relative w-full rounded-xl overflow-hidden bg-inverse-surface text-inverse-on-surface shadow-md">
+<!-- Media Box with Scrim -->
+<div class="relative h-56 w-full">
+<img class="w-full h-full object-cover" data-alt="Indonesian university students smiling proudly holding an award trophy and certificate onstage at an energetic national smart city tech hackathon. Modern stage lighting in deep cobalt navy and neon cyan, wearing navy varsity jackets with tech badges, high resolution photography, authentic editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV7f-nQqWiptpfshrMf19JZB9lsIrOsfPmaXKyqIW-SGp7rsS0VgXYAXHBo0DYSfR_FNT1mi9IafvKZ8cFsT4p673bP4LGxaLg8oCtAJ4NV4LTL2JnvfYwKIZMQYQLhNM1HKZboCv_NXvUzWRn76gs087TVi5jlGgFaA6QmCeh6YAsDmFa-8AOelkt31sae3oE-3tp7J6PEVbN3xYJcy3e7Kom6DkAYmkkEZW-vuXP-atNvwtio0jSew"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-inverse-surface/40 to-transparent"></div>
+<!-- Floating Badges in Image -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold shadow-md">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+            Prestasi Nasional
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-inverse-surface/80 backdrop-blur-md text-tertiary-fixed font-label-sm text-label-sm font-semibold">
+            Juara 1
+          </span>
+</div>
+</div>
+<!-- Content Area -->
+<div class="p-space-lg -mt-8 relative z-10 flex flex-col">
+<div class="flex items-center gap-3 text-surface-dim font-label-sm text-label-sm mb-2">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+            18 Mei 2026
+          </span>
+<span class="w-1 h-1 rounded-full bg-surface-dim/40"></span>
+<span class="flex items-center gap-1 text-tertiary-fixed">
+<span class="material-symbols-outlined text-[14px]">groups</span>
+            Binary Squad SI
+          </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-inverse-on-surface font-bold leading-snug">
+          Tim Mahasiswa SI Raih Juara 1 Hackathon Nasional Smart City 2026
+        </h2>
+<p class="font-body-sm text-body-sm text-surface-dim/80 mt-2 line-clamp-2">
+          Mengembangkan platform optimasi distribusi logistik perkotaan berbasis IoT dan Big Data, mengungguli 85 perwakilan perguruan tinggi negeri ternama di Indonesia.
+        </p>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<div class="flex items-center -space-x-2">
+<div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-[10px] font-bold text-on-primary ring-2 ring-inverse-surface">RD</div>
+<div class="w-7 h-7 rounded-full bg-tertiary flex items-center justify-center text-[10px] font-bold text-on-tertiary ring-2 ring-inverse-surface">AF</div>
+<div class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center text-[10px] font-bold text-on-secondary ring-2 ring-inverse-surface">+2</div>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary-fixed-dim hover:text-white transition-colors" href="#">
+            Baca Selengkapnya
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Key Metrics Sparkle Strip -->
+<div class="px-margin mt-4 grid grid-cols-3 gap-2">
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-stat-counter text-[24px] leading-tight text-primary font-extrabold">34+</span>
+<span class="w-5 h-0.5 bg-tertiary my-1 rounded-full"></span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-medium">Prestasi 2026</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-stat-counter text-[24px] leading-tight text-tertiary font-extrabold">98%</span>
+<span class="w-5 h-0.5 bg-primary my-1 rounded-full"></span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-medium">Serapan MBKM</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-stat-counter text-[24px] leading-tight text-on-surface font-extrabold">12</span>
+<span class="w-5 h-0.5 bg-tertiary-fixed-dim my-1 rounded-full"></span>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-medium">Agenda Bulan Ini</span>
+</div>
+</div>
+<!-- Grid Kartu Berita & Kegiatan -->
+<div class="px-margin mt-6">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Warta Terkini</h3>
+<a class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5" href="#">
+        Lihat Arsip
+        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</a>
+</div>
+<div class="flex flex-col gap-3.5">
+<!-- Card 1: Seminar Internasional -->
+<article class="news-item p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex gap-3.5 items-start hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Keynote international speaker presenting enterprise system architecture on high-tech LED stage screen with neural network diagrams. Modern academic auditorium setting with university scholars and blue lighting tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3fLXkyZ3XFUFcdwBlD1FnF3AgAM4YojUOvFe03IDlCO3dhzT1gzPjIyVoEnwbtMoHBdvFfkGRdDUrwq5Zv4sYiktUUa_f9exXzHeR8RVdCurJpKmtc5i3v7G18dtqD8tcnSGnMgsesvLtXY6t92zU5YdYlgBBWbTZEtTzj_bWT0_emrRTaXkIahNxLFg6luj7tgq4I0fgfUPKhpx-I4TZCuItwQqOJatU6ao45jlwoYgEjI7MYT2f5w"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-inverse-surface/80 text-[10px] text-white font-code-snippet">LIVE</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-[11px] font-bold truncate">
+              Seminar & Workshop
+            </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant shrink-0">22 Mei</span>
+</div>
+<h4 class="font-headline-sm text-[15px] leading-snug text-on-surface font-semibold line-clamp-2">
+            Seminar Internasional AI & Future Enterprise System 2026
+          </h4>
+<p class="font-body-sm text-[13px] text-on-surface-variant mt-1 line-clamp-1">
+            Menghadirkan pembicara dari University of Melbourne dan praktisi Cloud Architect global.
+          </p>
+<div class="mt-2 flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[13px]">location_on</span>
+              Auditorium Utama
+            </span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward_ios</span>
+</div>
+</div>
+</article>
+<!-- Card 2: MBKM Magang Industri -->
+<article class="news-item p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex gap-3.5 items-start hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 relative bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Modern collaborative technology office workspace in Jakarta with young Indonesian developers collaborating with laptop screens displaying product roadmaps and cloud databases. Bright natural ambient sunlight and corporate tech feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8RtAX_Rs43NaVMNRxBHkySIpu-nNC1mTymgLY1_Ewzfs7CSfyDJUgKfSw5XIpAOUdbPbY-hgMtEh5DKxiFIHnp3wewJ96TC1wx_FWLDv2-ee2KedUmt0elc398g0jO3SraWAlJlnm1ilzKs1qRlQ5IxQIpfrokFGKI9zgpItUtPDDjRfkcHzg1c--B2HFJLJbQpY15LoK3CP28RFuaRI-yihGRXU_G5zNzjeqvv5usYip02VBcfP0Tw"/>
+<span class="absolute top-1 left-1 px-1.5 py-0.5 rounded bg-primary text-on-primary text-[10px] font-label-sm font-bold">MBKM</span>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-[11px] font-bold">
+              Akademik
+            </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant shrink-0">15 Mei</span>
+</div>
+<h4 class="font-headline-sm text-[15px] leading-snug text-on-surface font-semibold line-clamp-2">
+            Pembukaan Pendaftaran Magang Industri Batch II (MBKM)
+          </h4>
+<p class="font-body-sm text-[13px] text-on-surface-variant mt-1 line-clamp-1">
+            Peluang konversi 20 SKS di lebih dari 40 perusahaan mitra BUMN, Unicorn fintech, dan perbankan digital.
+          </p>
+<div class="mt-2 flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] text-error font-semibold">
+<span class="material-symbols-outlined text-[13px]">hourglass_top</span>
+              Sisa 6 Hari Lagi
+            </span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward_ios</span>
+</div>
+</div>
+</article>
+<!-- Card 3: Kunjungan Industri Tech Giant -->
+<article class="news-item p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex gap-3.5 items-start hover:shadow-md transition-shadow">
+<div class="w-24 h-24 rounded-lg overflow-hidden shrink-0 relative">
+<img class="w-full h-full object-cover" data-alt="Group of informatics and information systems university students in navy alma mater jackets taking a guided tour inside a futuristic tech headquarter data center and software lab in Jakarta, wide lens, clean professional corporate atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvmwpeyBEi-ezP0MuTKQuQtEH1CEdKrXIGxfbL20XBwcHKQtg-tno0XY2Hu2h2wjFLPvgeeuN-ODsxELN6ZLMjiRG96FtZm0inTSQ-EnqWXN9b2IyOzJiGVa8NekJKDn_Qz7KTmtb_6B3FfaidSAaCQbckGRQcL4e9eu6R9Qy_OD1HA19ro8XEVmp0X-bXJ8HN-dYy5GpJK2wInJm0tqHGNvJewei9fMKkgd9XO0G7P_pl6jAUfg9B_Q"/>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-[11px] font-bold">
+              Kegiatan
+            </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant shrink-0">10 Mei</span>
+</div>
+<h4 class="font-headline-sm text-[15px] leading-snug text-on-surface font-semibold line-clamp-2">
+            Kunjungan Industri Mahasiswa ke Tech Giant Jakarta
+          </h4>
+<p class="font-body-sm text-[13px] text-on-surface-variant mt-1 line-clamp-1">
+            Mempelajari implementasi skalabilitas microservices dan budaya software development modern secara langsung.
+          </p>
+<div class="mt-2 flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-[11px] text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">group</span>
+              64 Peserta
+            </span>
+<span class="material-symbols-outlined text-[16px] text-primary">arrow_forward_ios</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- Galeri Dokumentasi Kegiatan Mahasiswa (Mosaic Bento Style) -->
+<div class="mt-8 px-margin">
+<div class="flex items-center justify-between mb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Lensa Sivitas Mahasiswa</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Harmoni kreasi, riset, dan kebersamaan di kampus.</p>
+</div>
+<span class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+</span>
+</div>
+<!-- Asymmetric Collage -->
+<div class="grid grid-cols-2 gap-2.5 mt-3">
+<!-- Item 1: Hackathon Session -->
+<div class="relative h-40 rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Intense collaborative coding session at hackathon table, glowing monitors showing source code and UI wireframes, university students collaborating actively at night with coffee cups." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGJn31-xJRVYxa4nk4f2pMLCzGUTHuH5ljTgw6QYLp4LoZJMCRkMKj4yYMXCsnOpiNu1WI5Jw1JJEgOKHxZBp4SyhL6ZnFTQNZjmRDhqoUxdc8UvfVxXyVmxNQIzTR-XWMaG3zVwWx_jOZaPf8pMNaNGfXt9Dt23NgBJmBN_CIiyrnDDkUNna5T_5wC97u8u5xNvlFQ2rnxe-hUN0kYK8XqMcMdK-llRY4tCv6ii3SRO0rsb8-tLOlew"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="font-label-sm text-[11px] text-white font-semibold">Hackathon Camp</span>
+</div>
+</div>
+<!-- Item 2: Wisuda & Kelulusan -->
+<div class="relative h-40 rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Graduation ceremony of Information Systems students throwing caps into the air in a grand university auditorium with festive academic ribbons and proud family celebrations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaRfml7a_aa3ZU2nR5yr6Wkoep_cza1OqYLkR40kBt-kPkvps7gluY4R7uoVnWELiT3xQr3LD40u1VSS4f3QWGgwD0X4TFI5CwyqPNGcKDWLqJ-ocZ7i4qbQLmtVIk87VhEnAvyWEapCSvo5mis8fQrUU2eKiytBKQeitGL_v_20DhMfIGiA3XsVieChhWVqVlxnAKBYWO6otp8daVdgXAqkJA8RQ2CMnRF-suc5fQwG991TiiEy-6mw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="font-label-sm text-[11px] text-white font-semibold">Yudisium & Wisuda</span>
+</div>
+</div>
+<!-- Item 3: Workshop Cloud Computing -->
+<div class="relative h-36 rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Hands-on cloud computing workshop in a modern computer laboratory room, students testing AWS and Google Cloud console deployment architectures on dual screen setups." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKEs_2DyL-BwygFGRVvaF8GmoE87Ayt96O0EddJxSxDPD-xwjzT_QBqvW5bYARRhYIUheU-YIszDxtOwJcapVRi8ABfn_KTywLmQ7V_qGG4sBX-5zIf173h0AdwJZxDPFbDRrAmIT3YIVmQ9trGNsvvM-lkBbyC7CnKVRsFdBpGm7YZl9aSSv2Yx9MOuwil5QlkcihKQDF0Ud9PRFD7o2MaUctZSXKLHQqXAAGcHFGDJUmx4Hd1Q_Oiw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="font-label-sm text-[11px] text-white font-semibold">Workshop Cloud Dev</span>
+</div>
+</div>
+<!-- Item 4: Himpunan Mahasiswa (HIMASI) -->
+<div class="relative h-36 rounded-xl overflow-hidden group shadow-sm">
+<img class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" data-alt="Energetic group photo of HIMASI student executive committee wearing matching navy organization polo shirts outside modern campus faculty glass atrium, high spirited and warm camaraderie." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXDSm2KYAz0NQyljsoX0KhbLnCXa1gBU--QSwaE6RJ2_flz180urZfm0tMWZ2NXp8W6DYi_xLQ6_AtUfPZNDjYReA6BTTKlZIDhSUd5falALyYjlKsEEnXj1-EsecselC2evOR1ZRptUCDLqCGR3oJ2enIjj9bDlZWUvDZRpO_XptMmskDH4y1ia6ltG-o54Sthky2Iv4CUdpwpPbeUFtnpaKQThCtiwJAMuWdT4BfqYgfQix53VNBbw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-2.5">
+<span class="font-label-sm text-[11px] text-white font-semibold">Dinamika HIMASI</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Newsletter & Social Media Follow Module -->
+<div class="mt-8 px-margin">
+<div class="p-space-lg rounded-2xl bg-surface-container-high relative overflow-hidden shadow-sm">
+<!-- Decorative background accent circle -->
+<div class="absolute -right-10 -bottom-10 w-40 h-40 rounded-full bg-primary-fixed/40 pointer-events-none blur-2xl"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings: 'FILL' 1;">mark_email_read</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Kirim Berita ke Email Anda</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Dapatkan rangkuman buletin riset, info beasiswa, kompetisi IT, dan agenda kampus tiap awal pekan.
+        </p>
+<!-- Newsletter subscription form -->
+<form class="mt-4 flex flex-col gap-2.5" onsubmit="event.preventDefault(); const msg = document.getElementById('sub-toast'); msg.classList.remove('hidden'); setTimeout(() => msg.classList.add('hidden'), 3500);">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-outline text-[18px]">mail</span>
+<input class="w-full pl-10 pr-3.5 py-2.5 rounded-lg bg-surface-container-lowest font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="nama@student.ac.id" required="" type="email"/>
+</div>
+<button class="w-full py-2.5 px-4 rounded-lg bg-primary hover:bg-primary/90 text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-2 shadow-sm transition-all active:scale-[0.99]" type="submit">
+<span>Langganan Buletin</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</form>
+<!-- Toast Feedback -->
+<div class="hidden mt-2.5 p-2 rounded-lg bg-tertiary text-on-tertiary font-label-sm text-label-sm flex items-center gap-2 animate-fade" id="sub-toast">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Terima kasih! Konfirmasi pendaftaran telah dikirim ke email Anda.</span>
+</div>
+<!-- Social Media Follow -->
+<div class="mt-6 pt-5 border-t border-outline-variant/30">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold block mb-3 uppercase tracking-wider">
+            Terhubung di Kanal Resmi Kami
+          </span>
+<div class="grid grid-cols-3 gap-2">
+<!-- Instagram -->
+<a class="flex flex-col items-center justify-center p-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-colors shadow-sm text-on-surface" href="https://instagram.com" rel="noopener" target="_blank">
+<span class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</span>
+<span class="font-label-sm text-[11px] font-bold">Instagram</span>
+<span class="font-code-snippet text-[10px] text-on-surface-variant">@si_kampus</span>
+</a>
+<!-- LinkedIn -->
+<a class="flex flex-col items-center justify-center p-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-colors shadow-sm text-on-surface" href="https://linkedin.com" rel="noopener" target="_blank">
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[18px]">hub</span>
+</span>
+<span class="font-label-sm text-[11px] font-bold">LinkedIn</span>
+<span class="font-code-snippet text-[10px] text-on-surface-variant">Prodi SI Resmi</span>
+</a>
+<!-- YouTube -->
+<a class="flex flex-col items-center justify-center p-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-colors shadow-sm text-on-surface" href="https://youtube.com" rel="noopener" target="_blank">
+<span class="w-8 h-8 rounded-full bg-error-container text-error flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-[18px]">smart_display</span>
+</span>
+<span class="font-label-sm text-[11px] font-bold">YouTube</span>
+<span class="font-code-snippet text-[10px] text-on-surface-variant">SI Channel</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Academic Department Support Hotline Card -->
+<div class="px-margin mt-4 mb-2">
+<div class="p-3.5 rounded-xl bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface block leading-tight">Punya Kabar Prestasi?</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Laporkan ke Divisi Humas & Kemahasiswaan</span>
+</div>
+</div>
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold hover:bg-primary hover:text-on-primary transition-colors" href="mailto:humas.si@kampus.ac.id">
+        Kirim Info
+      </a>
+</div>
+</div>
+</div>
+<script>
+  // Filter pills micro-interaction
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        b.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      btn.classList.remove('bg-surface-container', 'text-on-surface');
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-2xs"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="beranda" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-[11px] leading-tight">Beranda</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="akademik" href="#"><span class="material-symbols-outlined text-[24px]">school</span><span class="font-label-sm text-[11px] leading-tight">Akademik</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="dosen" href="#"><span class="material-symbols-outlined text-[24px]">badge</span><span class="font-label-sm text-[11px] leading-tight">Dosen</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-12 transition-colors text-primary font-bold" data-path="berita" href="#"><span class="material-symbols-outlined text-[24px]">newspaper</span><span class="font-label-sm text-[11px] leading-tight">Berita</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-primary transition-colors" data-path="profil-menu" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-label-sm text-[11px] leading-tight">Menu</span></a></div></nav></body></html>
