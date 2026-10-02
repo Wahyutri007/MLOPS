@@ -1,0 +1,26 @@
+[
+  {
+    "merchant": "Tuan Toko",
+    "tanggal": "",
+    "item": [
+      {
+        "kode_barang": "MK01",
+        "jumlah": 1000,
+        "harga_satuan": 5000
+      },
+      {
+        "kode_barang": "MK02",
+        "jumlah": 35,
+        "harga_satuan": 1250
+      },
+      {
+        "kode_barang": "MK03",
+        "jumlah": 45,
+        "harga_satuan": 1000
+      }
+    ],
+    "subtotal": 8936000,
+    "pajak": 0,
+    "total": 8936000
+  }
+]

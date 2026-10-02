@@ -1,0 +1,59 @@
+{
+  "merchant": {
+    "nama": "Tuan Toko",
+    "alamat": null,
+    "telepon": null
+  },
+  "transaksi": {
+    "no_nota": "20",
+    "tanggal": "2023-10-20",
+    "waktu": null,
+    "metode_pembayaran": null
+  },
+  "items": [
+    {
+      "kode_barang": "MK050",
+      "nama_barang": "simPATI 5K",
+      "jumlah": 1000,
+      "satuan": "Pcs",
+      "harga_satuan": 5000,
+      "diskon_item": null,
+      "total_harga": 5000000
+    },
+    {
+      "kode_barang": "MK050",
+      "nama_barang": "simPATI 5K",
+      "jumlah": 25,
+      "satuan": "Pcs",
+      "harga_satuan": 1250,
+      "diskon_item": null,
+      "total_harga": 31250
+    },
+    {
+      "kode_barang": "MK100",
+      "nama_barang": "simPATI 100K",
+      "jumlah": 45,
+      "satuan": "Pcs",
+      "harga_satuan": 1000,
+      "diskon_item": null,
+      "total_harga": 45000
+    },
+    {
+      "kode_barang": "PD002",
+      "nama_barang": "Perdana simPATI SRB",
+      "jumlah": 84,
+      "satuan": "Pcs",
+      "harga_satuan": 5000,
+      "diskon_item": null,
+      "total_harga": 420000
+    }
+  ],
+  "ringkasan_biaya": {
+    "subtotal": 11170000,
+    "diskon_total": 2234000,
+    "pajak": 0,
+    "layanan_biaya_lain": 0,
+    "grand_total": 8936000
+  },
+  "catatan": "Delapan Juta Sembilan Ratus Tiga Puluh Enam Ribu Rupiah\nDisc 10% Pembelian Minimal 1.000.000, diatas 10.000.000 Disc 20%"
+}

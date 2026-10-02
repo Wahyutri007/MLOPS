@@ -1,0 +1,50 @@
+{
+  "merchant": {
+    "nama": "Toko Berkah Jaya",
+    "alamat": "Jl. Melati No. 12",
+    "telepon": "0812-3456-7890"
+  },
+  "transaksi": {
+    "no_nota": "NP-2026-0231",
+    "tanggal": "2026-07-20",
+    "waktu": null,
+    "metode_pembayaran": "Tunai"
+  },
+  "items": [
+    {
+      "kode_barang": null,
+      "nama_barang": "Gula pasir 1 kg",
+      "jumlah": 5,
+      "satuan": "pcs",
+      "harga_satuan": 16000,
+      "diskon_item": 0,
+      "total_harga": 80000
+    },
+    {
+      "kode_barang": null,
+      "nama_barang": "Minyak goreng 2 L",
+      "jumlah": 3,
+      "satuan": "pcs",
+      "harga_satuan": 38000,
+      "diskon_item": 0,
+      "total_harga": 114000
+    },
+    {
+      "kode_barang": null,
+      "nama_barang": "Tepung terigu 1 kg",
+      "jumlah": 4,
+      "satuan": "pcs",
+      "harga_satuan": 13000,
+      "diskon_item": 0,
+      "total_harga": 52000
+    }
+  ],
+  "ringkasan_biaya": {
+    "subtotal": 246000,
+    "diskon_total": 0,
+    "pajak": 0,
+    "layanan_biaya_lain": 0,
+    "grand_total": 246000
+  },
+  "catatan": null
+}
