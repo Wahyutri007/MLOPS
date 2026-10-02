@@ -1,0 +1,11 @@
+{
+    "model": "TF-IDF + Logistic Regression",
+    "dataset": "data/tickets.csv",
+    "total_data": 8,
+    "training_data": 6,
+    "testing_data": 2,
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1_score": 0.6667,
+    "accuracy": 0.5
+}
